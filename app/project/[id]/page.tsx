@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default async function ProjectPage({params}:{params:Promise<{id:string}>}){const {id}=await params;return <main style={{minHeight:"100vh",display:"grid",placeItems:"center",textAlign:"center",padding:24}}><div><p style={{color:"var(--muted)"}}>PROJECT · {id}</p><h1>Your project is taking shape.</h1><p style={{color:"var(--muted)"}}>The editor workspace is coming soon.</p><Link href="/">Back to Tangram</Link></div></main>}
